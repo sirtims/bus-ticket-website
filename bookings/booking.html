@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>booking page</title>
+   <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+   <script src="../sweetalert.min.js"></script>
+   <div class="signUp-comtainer">
+      <div style="width: 100%;">
+         <button type="button" onclick="logout()" style="float: right;">logout</button>
+      </div>
+      <div class="logo">
+         <img src="../images/stock-vector-bus-logo-741469501_1.jpg" alt="">
+         <h1>D'COSMIC MOTORS</h1>
+      </div>
+      <div class="form">
+         <form onSubmit="handleBooking(event)" class="form-el">
+            <h2>Booking</h2>
+            <div class="input">
+               <input id="first-name" class="input-el" required type="text" placeholder="First Name"><br>
+               <input id="last-name" class="input-el" required type="text" placeholder="Last Name"><br>
+               <input id="phone-number" class="input-el" required type="number" placeholder="Phone number"><br>
+               <div class="radio">
+                  <input required name="radio" type="radio" value="male">
+                  <label for="male">Male</label><br>
+                  <input required name="radio" type="radio" value="female">
+                  <label for="female">Female</label><br>
+               </div>
+               <input id="date_of_birth" class="input-el" type="date" required placeholder="Date of Birth"><br>
+               <p id="error-message"></p>
+               <button type="submit">Make payment</button>
+            </div>
+            <div>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <script src="../common.js"> </script>
+   <script src="../Models/users.js"></script>
+   <script src="bookings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Log in page</title>
+   <link rel="stylesheet" href="../index.css">
+
+</head>
+
+<body>
+   <script src="../sweetalert.min.js"></script>
+
+   <div class="signUp-comtainer">
+      <div class="logo">
+         <img src="../images/stock-vector-bus-logo-741469501_1.jpg" alt="">
+         <h1>D'COSMIC MOTORS</h1>
+      </div>
+      <div class="form">
+         <form class="form-el" onSubmit="handleLogIn(event)">
+            <h2>Log In</h2>
+            <div class="input">
+               <input id="log-email" required class="input-el" type="email" placeholder="Email"><br>
+               <input id="log-pass" autocomplete="on" required class="input-el" type="password"
+                  placeholder="Password"><br>
+               <p id="error-message"></p>
+               <button id="log-btn" type="submit">Log In</button>
+            </div>
+            <div>
+               <p>Don't have account?<a id="sgn" href="sign-up.html">Sign up</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <script src="../common.js"></script>
+   <script src="../Models/users.js"></script>
+   <script src="login.js"></script>
+</body>
+
+</html>

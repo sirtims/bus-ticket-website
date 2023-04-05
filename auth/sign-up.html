@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign up page</title>
+   <link rel="stylesheet" href="../index.css">
+
+</head>
+
+<body>
+   <script src="../sweetalert.min.js"></script>
+   <div class="signUp-comtainer">
+      <div class="logo">
+         <img src="../images\stock-vector-bus-logo-741469501_1.jpg" alt="">
+         <h1>D'COSMIC MOTORS</h1>
+      </div>
+      <div class="form">
+         <form class="form-el" onSubmit="handleSignUp(event)">
+            <h2>Sign Up</h2>
+            <div class="input">
+               <input id="username" required class="input-el" type="text" placeholder="Username"><br>
+               <input id="email" required class="input-el" type="email" placeholder="Email"><br>
+               <input id="password" autocomplete="on" required class="input-el" type="password"
+                  placeholder="Password"><br>
+               <div class="check-box">
+                  <input required type="checkbox" id="check">
+                  <label for="check">I agree with the terms and conditions</label>
+               </div>
+               <p id="error-message"></p>
+               <button id="sign-button" type="submit">Sign Up</button>
+            </div>
+            <div>
+               <p>Already have an account?<a href="Login.html">Log In</a></p>
+            </div>
+         </form>
+
+      </div>
+   </div>
+
+   <script src="../common.js"></script>
+   <script src="../Models/users.js"></script>
+   <script src="signup.js"></script>
+
+</body>
+
+</html>
