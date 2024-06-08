@@ -11,6 +11,7 @@ if (currentUser) {
   }
 }
 
+
 const handleLogIn = (e) => {
   e.preventDefault();
 
@@ -33,7 +34,7 @@ const handleLogIn = (e) => {
 
   if (allErrors.length) {
     allErrors.forEach((error) => {
-      var p = document.createElement("p");
+      let p = document.createElement("p");
       p.textContent = error;
       errorMess.appendChild(p);
     });

@@ -1,142 +1,163 @@
 body{
+   margin: 0;
+   background-color: rgba(140, 140, 140, 0.027);
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
-.container{
-   background-image: url('images/bus-traveling-on-asphalt-road-260nw-1345741577 (1)_1.jpg');
-   width: 100%;
-   height: 400px;
+header{
+   background-image: url('images/bg2.jpg');
+   margin-top:6.34rem ;
    background-size: cover;
-   margin-bottom: 4%;
-   border-radius: 20px;
+   background-position: center;
+   background-repeat: no-repeat;
+   height:100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    margin-bottom: 0;
 }
-.header-container{
+
+.nav-container{
    display: flex;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100vw;
+   
 }
-img{
-   height: 50px;
-   width: 80px;
+header h1{
+  font-size:6vw ;
+  text-align: center;
+  color: aliceblue;
 }
 .logo-nav{
    
-   margin-top: 4%;
-}
-.head-image{
-   margin-top: 4%;
+   margin-top: 5px;
 }
 ul{
    margin-top: 0;
 }
 .logo{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   margin-top: 0.5rem;
+   margin-left: 4rem;
+   text-align: center;
 }
 .logo img{
    margin-bottom: 0%;
    border-radius: 50%;
-   box-shadow: 0 0 10px 10px  rgb(49, 53, 49);
-   height: 200px;
-   width: 230px; 
+   box-shadow: 0px 0px 10px   rgba(49, 53, 49, 0.7);
+   height: 50px;
+   width: 50px; 
 
 }
 .logo h1{
    margin-top: 0;
-   font-style: initial;
+   font-size: 1rem ;
+   font-style: italic;
    color: rgb(49, 53, 49);
    font-family:fantasy;
 }
 .orange-color button {
-   background-color: rgb(253, 196, 8);
+   background-color: rgb(253, 250, 250);
    font-size: medium;
-   border:0;
+   border:2px solid rgb(253, 196, 8);
    margin-bottom: 20px;
    margin-right: 20px;
    padding: 10px 15px;
    border-radius:10px ;
-   color: rgb(253, 250, 250);
+   color: black;
    font-weight: 700;
+   cursor: pointer;
+   box-shadow: 0px 1px 4px   rgba(49, 53, 49, 0.7);
+   transition: color 0.2s ease,
+               background-color 0.5s ease;
 }
-.head-image img{
-   height:250px;
-   width: 400px;
-   border-radius: 20px;
-   box-shadow: 2px 2px 20px 12px  rgb(49, 53, 49) ;
-   border: 1px solid rgb(253, 196, 8) ;
+.orange-color button:hover{
+   color: aliceblue;
+   background-color:  rgb(255, 206, 44);
 }
+
 .description-container{
-   padding-left:10% ;
-   padding-right: 10%;
-   padding-top: 2%;
-   border-left:10px solid rgb(253, 196, 8);
-   border-right: 10px solid rgb(253, 196, 8);
-   border-bottom: 4px solid rgb(22, 21, 21);
+   padding: 4% 10% ;
+   margin: auto 4rem;
+   border-radius: 3px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.153);
    display:flex;
    justify-content:space-between;
-   height: 600px;
-   background-color: rgb(193, 207, 219);
+   align-items: center;
    box-sizing: border-box;
+
   
  
 }
 .description-image{
-   border-radius: 100px;
-   box-shadow: 2px 2px 20px 12px  rgb(49, 53, 49) ;
-   height: 500px;
-   display: flex;
-   flex-direction: column;
+   font-size: 20px;
+   text-align: center;
+   margin: 3vw;
+   /* padding: 20px; */
    align-items: center;
-   background-color: rgb(253, 196, 8);
    color: rgb(76, 76, 124);
 }
-.description p{
-   font-stretch:narrower;
-   margin-left: 16px;
-   margin-right: 18px;
-   /* padding-right: 100px; */
+.description-image img{
+   width: 40vw;
+   border-radius: 10px;
+   box-shadow: 2px 2px  12px  rgb(49, 53, 49) ;
 }
 .description{
-   margin-left: 250px;
+   padding: 2rem 1.3rem 2rem 1.3rem;
+   text-align: center;
+   margin-left:5vw;
+   margin-right:10vw;
    border-radius: 100px;
-   box-shadow: 2px 2px 20px 12px  rgb(49, 53, 49) ;
-   height: 500px;
+   box-shadow: 2px 2px 12px  rgb(49, 53, 49) ;
+   font-size: 2vw;
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
-   color: rgb(253, 196, 8);
-   background-color: rgb(76, 76, 124);
+   color: rgb(255, 255, 255);
+   background:linear-gradient(200deg, rgba(0, 0, 0, 0.382),rgba(234, 168, 206, 0.579)), url(images/bg.jpg);
+   background-position:bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
+.description p{
+   margin-left: 16px;
+   margin-right: 16px;
+ 
+}
+
 .description h2{
-   margin-top: 19.29;
-   color: rgb(253, 196, 8);
+   margin-top: 19.29px;
+   color: rgb(255, 189, 57);
    margin-left: 30px;
    margin-right: 30px;
    margin-bottom: 0;
 
 }
-.description-image img{
-   height: 300px;
-   width: 400px;
-   border-radius: 100px;
-   box-shadow: 2px 2px 20px 12px  rgb(49, 53, 49) ;
-}
+
 .description img{
    height: 200px;
    width: 230px; 
    box-shadow: 2px 2px 20px 12px  rgb(49, 53, 49) ;
    border-radius: 10px;
 }
+.signUp-comtainer .logo{
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+}
 .sgn-btn{
-   /* background-image:url(images/footer.jpg) ; */
    padding-top: 30px;
    padding-bottom: 30px;
-   background-size: cover;
    display: flex;
-   /* align-items: center; */
+  
    justify-content: center;
 }
 .sgn-btn button{
@@ -155,22 +176,29 @@ ul{
    padding-right: 10%;
    padding-top: 4%;
    justify-content: space-between;
-   height: 350px;
+   /* height: 350px; */
    color:white; 
-   font-size: medium;
+   font-size: 2vw;
    border-left:10px solid rgb(253, 196, 8);
    border-right: 10px solid rgb(253, 196, 8);
    border-radius: 15px;
 }
 .contact-us{
+   text-align:start ;
    width: 300px;
+}
+
+ .foot-logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 0;
 }
 .contact-label-wrapper{
 
  display: flex;
- /* justify-content: space-between; */
- align-items: center;
- align-content: center;
+ /* align-items: center; */
+ /* align-content: center; */
  align-self: center;
 }
 .contact-label-wrapper img{
@@ -179,19 +207,17 @@ ul{
    margin: 0 20px 10px 0;
    border-radius: 50%;
 }
-.contact-label-wrapper label{
-   padding-left: 0;
-}
+
+
 .foot-logo img{
-   height: 100px;
-   width: 100px;
+   
+   width: 6vw;
+
 }
 .foot-logo h1{
-   color: aliceblue;
+   color: rgb(255, 255, 255);
 }
-button:hover{
-   background-color:  rgb(225, 176, 14);
-}
+
 .signUp-comtainer{
    display: flex;
    flex-direction: column;
@@ -233,13 +259,11 @@ button:hover{
    display: flex;
    flex-direction: column;
    border:1px solid  rgb(49, 53, 49);
-   /* height: 100%; */
-   width: 400px;
+   /* width: 400px; */
    justify-content: space-between;
-   /* align-items: center; */
    padding: 20px 25px;
    border-radius: 10px;
-    box-shadow: 2px 2px 20px 12px  rgb(49, 53, 49) ;
+    box-shadow: 2px 2px 12px  rgb(49, 53, 49) ;
    
    
 }
@@ -254,7 +278,7 @@ button:hover{
    flex-direction: column; 
    align-items: center;
    padding:0;
-   /* box-sizing: border-box; */
+   
 }
 .radio{
    margin: 10px 0px 10px ;
@@ -299,34 +323,162 @@ button:hover{
    margin: 0 50px;
    margin-top: 20px;
 }
+.harmburger-container{
+   margin-right: 10px;
+   margin-top: 5px;
+   position: relative;
+   visibility: hidden;
+}
 
+
+.harmburger{
+   margin: 8px ;
+   background-color: black;
+   height: 4px;
+   width: 40px;
+   transition: transform 0.3s ease, rotate 0.3s ease;
+
+}
+.burger-link{
+   height: 90px;
+   background:linear-gradient(40deg, rgba(255, 159, 159, 0.993), rgb(136, 156, 255));
+   position: fixed;
+   top: 6.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   right: -2000px;
+   display: hidden;
+  
+}
+.burger-link a button{
+   margin: 0 20px;
+   padding: 3px 10px;
+   
+}
 
 
 /* mobile section */
-@media screen and(max-width:600px){
-   .container{
-      background-image: url('images/bus-traveling-on-asphalt-road-260nw-1345741577 (1)_1.jpg');
-      width:100%; 
-
-   }
-   .logo{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-   .logo img{
-      margin-bottom: 0%;
-      border-radius: 50%;
-      box-shadow: 0 0 10px 10px  rgb(49, 53, 49);
-      height: 15px;
-      width: 20px; 
+@media screen and (max-width:400px){
    
+   header{
+     margin: 0;
+   }
+   .description-image{
+   
+    padding: 0;
+   }
+   .description-image img{
+     
+     margin: 0;
+   }
+
+   .burger-link{
+    
+      top: 9.2rem;
+     
+     
+   }
+
+ 
+ 
+}
+
+@media screen and (max-width: 650px){
+  
+   .logo{
+      margin-bottom: 20px;
    }
    .logo h1{
-      margin-top: 0;
-      font-style: initial;
-      color: rgb(49, 53, 49);
-      font-family:fantasy;
+      font-size: .6rem ;
+      font-style: italic;
+      display: inline-flex;
+   
+      color: rgba(49, 53, 49, 0.878);
+      
+   }
+   .orange-color{
+      visibility: hidden;
    }
   
+   .description-container{
+     /* margin: 0; */
+      display:block;
+    
+   }
+   .foot-logo h1{
+      color: aliceblue;
+   }
+   .harmburger-container{
+      visibility: visible;
+      cursor: pointer;
+   }
+   .description-image{
+      padding-left: 0;
+      margin: 2px 50px;
+     
+    }
+   .description-container img{
+     /* width: 200px; */
+   }
+   .description{
+      margin: 50px;
+   }
+   .burger-link.add{
+     left: 0;
+     right: 0;
+      visibility: visible;
+      animation:  slide 0.5s ease-out forwards;
+     
+   }
+   .harmburger1.toggle{
+     transform: rotate(125deg) ;
+    
+   }
+   .harmburger2.toggle{
+      display: none;
+   }
+   .harmburger3.toggle{
+      transform:translateY(-10px) rotate(-125deg);
+   }
+}
+@media screen and (max-width: 900px){
+   .description-container {
+      padding: 4px;
+   }
+   .description-container img{
+      /* width: 250px; */
+    }
+    .description-image{
+      padding-left: 0;
+      /* margin-left: 50px; */
+    }
+    .description{
+      margin-right:50px;
+      margin-bottom: 30px;
+      margin-top:50px ;
+    }
+
+
+    /* 
+      <div class="description">
+            <h2>Welcome to Our Site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum omnis pariatur voluptates
+               dignissimos,
+               neque quis magnam cum eaque consectetur. Dolor blanditiis, consequuntur vel harum dignissimos unde
+            </p>
+         </div> */
+}
+
+
+@keyframes slide {
+   from{
+      /* opacity: 0; */
+      transform: translateX(100px);
+   }
+   to{
+      opacity: 1;
+      transform-origin: none;
+
+   }
 }

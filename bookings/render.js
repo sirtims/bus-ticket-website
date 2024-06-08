@@ -2,14 +2,14 @@
 let bookedDetails = JSON.parse(localStorage.getItem("booked-details"));
 const bookList = document.getElementById("grabList");
 
-function render(){
+function render(details){
    let value = ""
-   for(let i = 0; i < bookedDetails.length; i++){
-      value += `<li class="book-list">${bookedDetails[i]}</li>  `
+   for(let i = 0; i < details.length; i++){
+      value += `<li class="book-list">${details[i]}</li>  `
    }
    bookList.innerHTML = value
 };
-render();
+render(bookedDetails);
 const handleHome = (e) => {
    e.preventDefault();
    window.location.href = "../index.html"
